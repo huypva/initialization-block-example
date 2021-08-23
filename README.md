@@ -1,44 +1,32 @@
 The example project for StringBoot service
 
 <div align="center">
-    <img src="./assets/images/hello-world.png"/>
+    <img src="./assets/images/initialization-block.png"/>
 </div>
-
-## Getting Started
 
 ## Project structure
 ```
 .
-├── hello-world
-│   ├── Dockerfile
+├── initialization-block
+│   ├── pom.xml
 │   ...
-├── docker-compose.yaml
+├── pom.xml
 |
 └── README.md
 ```
 
-## Prerequisites
-- Make sure that you have Docker and Docker Compose installed
-  - Windows or macOS:
-    [Install Docker Desktop](https://www.docker.com/get-started)
-  - Linux: [Install Docker](https://www.docker.com/get-started) and then
-    [Docker Compose](https://github.com/docker/compose)
-
 ## Start project
-## Start project in local
-## Start project in docker 
 
-- Start project
-```console
-docker-compose up -d
+```shell
+$ mvn clean package
+$ java -jar initialization-block/target/initialization-block-0.0.1-SNAPSHOT.jar
 ```
 
-- Some request & test
-
-
-- Stop project
-```console
-docker-compose down
+```shell
+Static initialization block 1
+Initialization block 1
+Initialization block 2
+Contructor 1
 ```
 
 ## Contribute
