@@ -17,18 +17,31 @@ The example project for StringBoot service
 
 ## Start project
 
-```shell
-$ mvn clean package
-$ java -jar initialization-block/target/initialization-block-0.0.1-SNAPSHOT.jar
+- Build project
+
+```shell script
+$ ./mvnw clean package
+...
+[INFO] 
+[INFO] Initialization Block ............................... SUCCESS [  4.773 s]
+[INFO] Parent ............................................. SUCCESS [  0.013 s]
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time:  4.920 s
+[INFO] Finished at: 2022-07-26T16:54:03+07:00
+[INFO] ------------------------------------------------------------------------
 ```
 
-```shell
+- Run project
+
+```shell script
+$ java -jar initialization-block/target/initialization-block-0.0.1-SNAPSHOT.jar 
 Static initialization block 1
 Initialization block 1
 Initialization block 2
-Contructor 1
-```
+Constructor 1
 
-## Contribute
+```
 
 ## Reference

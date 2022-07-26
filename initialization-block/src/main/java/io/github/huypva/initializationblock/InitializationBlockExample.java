@@ -1,6 +1,6 @@
-package io.codebyexample.initializationblock;
+package io.github.huypva.initializationblock;
 
-public class Main {
+public class InitializationBlockExample {
 
   static {
     System.out.println("Static initialization block 1");
@@ -14,11 +14,11 @@ public class Main {
     System.out.println("Initialization block 2");
   }
 
-  public Main() {
-    System.out.println("Contructor 1");
+  public InitializationBlockExample() {
+    System.out.println("Constructor 1");
   }
 
   public static void main(String[] args) {
-    Main main = new Main();
+    new InitializationBlockExample();
   }
 }
